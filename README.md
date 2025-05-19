@@ -24,6 +24,8 @@
 * **Dockerized Setup:** Includes `docker-compose` for easy local setup of PostgreSQL and Redis dependencies.
 * **API Documentation:** Provides comprehensive API documentation using Swagger/OpenAPI for easy integration and testing.
 
+**Note:** Here inorder to mock the file processing, worker has 2 setTimouts added where the design is first timeout is to mock fetching large file contents and second timeout after fetching the file content is for time taken for analyzing the fetched data. 
+
 ## Local Setup (Development)
 
 This guide assumes you have Docker and Docker Compose installed on your system.
